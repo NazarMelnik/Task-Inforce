@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import { setCloseModal } from "../../redux/actions/modal";
+import { Button } from "@mui/material";
 export default function Modal(props) {
   const handleBackgroundClick = (event) => {
     if (!event.target.closest(".modal-content")) {
@@ -19,9 +20,9 @@ export default function Modal(props) {
         <div className="modal-header">
           <h3>{modalHeader}</h3>
           {closeButton ? (
-            <button className="close-button-modal" onClick={() => closeModal()}>
+            <Button variant="contained" onClick={() => closeModal()}>
               &times;
-            </button>
+            </Button>
           ) : null}
         </div>
         <div className="modal-body">
@@ -29,12 +30,12 @@ export default function Modal(props) {
         </div>
         {modalAction && (
           <div className="modal-footer">
-            <button className="ok-button" onClick={() => modalOk()}>
+            <Button variant="contained" onClick={() => modalOk()}>
               {modalAction[0]}
-            </button>
-            <button className="cancel-button" onClick={() => closeModal()}>
+            </Button>
+            <Button variant="contained" onClick={() => closeModal()}>
               {modalAction[1]}
-            </button>
+            </Button>
           </div>
         )}
       </div>

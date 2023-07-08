@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import { BasketProduct } from "../components/BasketProduct";
 import { CheckoutForm } from "../components/CheckoutForm";
 import { useSelector } from "react-redux";
@@ -30,9 +31,13 @@ export default function Checkout() {
   ) : (
     <div className="checkout-nothing-wrapper">
       <p className="product--nothing">Ще нічого не додано :(</p>
-      <Link to="/" className="checkout-btn">
+      <Button
+        component={Link}
+        to="/"
+        variant="contained"
+        className="checkout-btn">
         Повернутись на головну
-      </Link>
+      </Button>
     </div>
   );
 }

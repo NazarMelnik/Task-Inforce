@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import PropTypes from "prop-types";
 export default function Product(props) {
   const defaultProps = {
@@ -8,13 +9,19 @@ export default function Product(props) {
   return (
     <div className="product-item">
       {removeBtn ? (
-        <button className="close-button" onClick={() => setRemoveBtnModal()}>
+        <Button onClick={() => setRemoveBtnModal()}>
           <span aria-hidden="true">&times;</span>
-        </button>
+        </Button>
       ) : (
         defaultProps.closeBtn
       )}
-      <img src={src} alt={name} width="300" height="300" />
+      <img
+        src={src}
+        alt={name}
+        width="300"
+        height="300"
+        className="product-img"
+      />
       <p className="product-item__title">{name}</p>
       <p className="product-item__article">АРТИКУЛ : {article}</p>
       <p className="product-item__price">{price}</p>

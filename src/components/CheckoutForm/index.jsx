@@ -3,6 +3,7 @@ import * as Yup from "yup";
 import { PatternFormat } from "react-number-format";
 import { buyProductModal } from "../../redux/actions/modal";
 import { useDispatch } from "react-redux";
+import { Button, TextField } from "@mui/material";
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, "Ім'я дуже коротке!")
@@ -48,52 +49,56 @@ export function CheckoutForm() {
   return (
     <>
       <form className="checkout-form" onSubmit={formik.handleSubmit}>
-        <input
+        <TextField
           className="checkout-input"
           type="text"
           name="name"
           id="name"
+          label="Ваше ім'я"
           onChange={formik.handleChange}
-          placeholder="Ваше ім'я"
           value={formik.values.name}
+          error={!!formik.errors.name}
           onBlur={formik.handleBlur}
         />
         {formik.touched.name && formik.errors.name ? (
           <div>{formik.errors.name}</div>
         ) : null}
-        <input
+        <TextField
           className="checkout-input"
           type="text"
           name="lastName"
           id="lastName"
           onChange={formik.handleChange}
-          placeholder="Ваше прізвище"
+          label="Ваше прізвище"
           onBlur={formik.handleBlur}
           value={formik.values.lastName}
+          error={!!formik.errors.lastName}
         />
         {formik.touched.lastName && formik.errors.lastName ? (
           <div>{formik.errors.lastName}</div>
         ) : null}
-        <input
+        <TextField
+          label="Ваш вік"
           className="checkout-input"
           type="text"
           name="age"
           id="age"
           onChange={formik.handleChange}
-          placeholder="Ваш вік"
           onBlur={formik.handleBlur}
+          error={!!formik.errors.age}
           value={formik.values.age}
         />
         {formik.touched.age && formik.errors.age ? (
           <div>{formik.errors.age}</div>
         ) : null}
-        <input
+        <TextField
           className="checkout-input"
           type="text"
+          label="Бажаний розмір(XL,L,S,M,XXL)"
           name="size"
+          error={!!formik.errors.size}
           id="size"
           onChange={formik.handleChange}
-          placeholder="Бажаний розмір"
           onBlur={formik.handleBlur}
           value={formik.values.size}
         />
@@ -105,6 +110,7 @@ export function CheckoutForm() {
           format="+380 (##) #### ###"
           allowEmptyFormatting
           mask="#"
+          error={!!formik.errors.phone}
           type="text"
           name="phone"
           id="phone"
@@ -116,12 +122,12 @@ export function CheckoutForm() {
         {formik.touched.phone && formik.errors.phone ? (
           <div>{formik.errors.phone}</div>
         ) : null}
-        <button
+        <Button
           type="submit"
-          onSubmit={formik.handleSubmit}
-          className="checkout-button">
+          variant="contained"
+          onSubmit={formik.handleSubmit}>
           Замовити
-        </button>
+        </Button>
       </form>
     </>
   );

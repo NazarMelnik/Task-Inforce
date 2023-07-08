@@ -1,9 +1,8 @@
 import Product from "../Product";
-import Button from "../Button";
 import Container from "../Container";
 import { setBaskModal, setFavModal } from "../../redux/actions/modal";
 import { useDispatch } from "react-redux";
-
+import { Button } from "@mui/material";
 export default function ProductList(props) {
   const {
     products,
@@ -37,23 +36,22 @@ export default function ProductList(props) {
               buttonForBask={buttonForBask}>
               {buttonForBask ? (
                 <Button
-                  color="#333333"
-                  text="Додати в кошик"
+                  variant="contained"
                   background="linear-gradient(to bottom, #005bbb, #ffd500)"
-                  setModal={() => {
+                  onClick={() => {
                     openBasketModal(elem, dispatch);
-                  }}
-                />
+                  }}>
+                  Додати в кошик
+                </Button>
               ) : null}
               {buttonForFav ? (
                 <Button
-                  color="#333333"
-                  text="Додати в улюблене"
-                  background="linear-gradient(to bottom, #005bbb, #ffd500)"
-                  setModal={() => {
+                  variant="contained"
+                  onClick={() => {
                     openFavModal(elem, dispatch);
-                  }}
-                />
+                  }}>
+                  Додати в улюблене
+                </Button>
               ) : null}
             </Product>
           ))

@@ -5,6 +5,12 @@
   font-weight: 700;
   text-align: center;
   color: #303030;
+  @media (max-width: 360px) {
+    max-width: 200px;
+    margin-right: auto;
+    font-size: 24px;
+    margin-left: auto;
+  }
 }
 .checkout-text {
   margin-top: 10px;
