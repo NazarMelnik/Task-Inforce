@@ -5,7 +5,9 @@
   margin-bottom: 20px;
   gap: 15px;
 }
-
+.MuiInputLabel-root {
+  z-index: unset !important;
+}
 .checkout-button {
   width: 200px;
   height: 40px;

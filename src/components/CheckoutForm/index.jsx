@@ -4,6 +4,7 @@ import { PatternFormat } from "react-number-format";
 import { buyProductModal } from "../../redux/actions/modal";
 import { useDispatch } from "react-redux";
 import { Button, TextField } from "@mui/material";
+
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, "Ім'я дуже коротке!")
