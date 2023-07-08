@@ -1,0 +1,52 @@
+.spinner {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.spinner:after {
+  animation: changeContent 0.8s linear infinite;
+  display: block;
+  content: "⠋";
+  font-size: 80px;
+}
+
+@keyframes changeContent {
+  10% {
+    content: "⠙";
+  }
+  20% {
+    content: "⠹";
+  }
+  30% {
+    content: "⠸";
+  }
+  40% {
+    content: "⠼";
+  }
+  50% {
+    content: "⠴";
+  }
+  60% {
+    content: "⠦";
+  }
+  70% {
+    content: "⠧";
+  }
+  80% {
+    content: "⠇";
+  }
+  90% {
+    content: "⠏";
+  }
+}
+.product--nothing {
+  grid-column: 2;
+  justify-self: center;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 20px;
+  font-size: 25px;
+}

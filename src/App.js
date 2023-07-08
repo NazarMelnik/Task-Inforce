@@ -5,10 +5,13 @@ import {
   fetchProducts,
   getBasketProduct,
   getFavProduct,
-} from "../redux/actions";
+} from "./redux/actions/products";
 import Header from "./components/Header";
+import Favorite from "./pages/Favorite";
+import Home from "./pages/Home";
 import Modal from "./components/Modal";
 import { useSelector } from "react-redux";
+import Checkout from "./pages/Checkout";
 
 export function App() {
   const dispatch = useDispatch();
@@ -47,6 +50,11 @@ export function App() {
   return (
     <>
       <Header favorite={favoriteProducts} basket={basketProducts} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/favorite" element={<Favorite />} />
+        <Route path="/checkout" element={<Checkout />} />
+      </Routes>
       <Modal
         isOpen={isOpen}
         modalAction={modalAction}

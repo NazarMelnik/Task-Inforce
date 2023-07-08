@@ -14,6 +14,7 @@ export default function Button(props) {
         style={{
           background: props.background || defaultProps.background,
           color: props.color,
+          cursor: "pointer",
         }}
         onMouseEnter={(e) => {
           e.target.style.background =
