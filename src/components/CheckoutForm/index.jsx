@@ -26,7 +26,7 @@ const SignupSchema = Yup.object().shape({
     )
     .required("Обов'язкове поле!"),
   size: Yup.string()
-    .matches(/\b(?:L|M|XL|S|XS|XXL)\b/, "Не повна/не вірна адреса!")
+    .matches(/\b(?:L|M|XL|S|XS|XXL)\b/, "Не вірний розмір!")
     .required("Обов'язкове поле!"),
 });
 
@@ -37,8 +37,8 @@ export function CheckoutForm() {
       name: "",
       lastName: "",
       age: "",
-      address: "",
       phone: "",
+      size: "",
     },
     validationSchema: SignupSchema,
     onSubmit: () => {
