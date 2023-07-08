@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+Шановний командо Inforce,
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Я хочу висловити свою щиру вдячність за можливість взяти участь у тестовому завданні та розгляд моєї роботи. Хоча у мене було обмежений час для виконання завдання, я сподіваюся, що це дозволило вам оцінити мої загальні навички та підхід до розробки. Я також міг використати бекенд для того, щоб отримувати об'єкт який в мене зберігається в public папці(express я вмію використовувати)
 
-## Available Scripts
+В ході виконання завдання я використав такі технології та бібліотеки:
 
-In the project directory, you can run:
+    React та React DOM: використовую ці бібліотеки для побудови потужних та ефективних користувацьких інтерфейсів.
+    React Router DOM: використовую цю бібліотеку для маршрутизації та навігації між сторінками у веб-додатку.
+    Redux та React Redux: використовую ці бібліотеки для керування станом додатка та забезпечення однозначності даних.
+    Redux Thunk: використовую цю бібліотеку для обробки асинхронних дій та взаємодії з Redux.
+    Formik та Yup: використовую ці бібліотеки для роботи з формами та валідації введених даних.
+    Material-UI (MUI): використовую цю бібліотеку для створення естетичного та доступного дизайну інтерфейсу користувача.
+    Emotion: використовую цей CSS-фреймворк для стилізації компонентів React та створення компонентів з високою перевикористовуваністю та розширюваністю.
+    Інші бібліотеки та інструменти: такі як uuid для створення унікальних ідентифікаторів, redux-logger для логування дій у Redux, sass для підтримки препроцесора CSS та інші.
 
-### `npm start`
+Хоча я розумію, що в тестовому завданні не було достатньо часу для виявлення всіх моїх навичок, я впевнений у своїй здатності швидко навчитися новим технологіям та пристосуватися до нового проекту.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ще раз дякую за цю можливість, я з нетерпінням чекаю на ваші враження та можливості подальшого співбесідування.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+З повагою,Назар
