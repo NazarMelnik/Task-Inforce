@@ -1,0 +1,37 @@
+.header {
+  background-color: #eeeeee;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.header-nav__list {
+  max-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo__link {
+  position: relative;
+}
+.nav-logo__counter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  color: #eeeeee;
+  background-color: blue;
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 15px;
+}
+.rigth--counter {
+  background-color: yellow;
+  color: #000000;
+  left: -5px;
+}
+.left--counter {
+  background-color: blue;
+  color: #ffffff;
+  right: -5px;
+}

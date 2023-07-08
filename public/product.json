@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Біла футболка BULL TERRIER MMXV",
+    "price": "689  ₴",
+    "src": "./img/Cheeky_nun_White.webp",
+    "article": "330211",
+    "color": ["білий", "сірий"],
+    "id": 1
+  },
+  {
+    "name": "ЧОЛОВІЧА ФУТБОЛКА КОЛЬОРУ ХАКІ TWO SKULL MMXV",
+    "price": "649  ₴",
+    "src": "./img/futbolka-khaki.webp",
+    "article": "330212",
+    "color": ["хакі", "жовтий"],
+    "id": 2
+  },
+  {
+    "name": "ЧОЛОВІЧІ ФУТБОЛКИ MMXV 69",
+    "price": "789  ₴",
+    "src": "./img/cross-black-1.webp",
+    "article": "330213",
+    "color": ["чорний"],
+    "id": 3
+  },
+  {
+    "name": "БІЛА ФУТБОЛКА DOG MMXV",
+    "price": "489  ₴",
+    "src": "./img/dog.jpg",
+    "article": "330214",
+    "color": ["білий"],
+    "id": 4
+  },
+  {
+    "name": "ЧОЛОВІЧІ ФУТБОЛКИ CROSS",
+    "price": "849  ₴",
+    "src": "./img/gang.webp",
+    "article": "330215",
+    "color": ["чорний"],
+    "id": 5
+  },
+  {
+    "name": "ЧОЛОВІЧІ ФУТБОЛКИ Donald",
+    "price": "669  ₴",
+    "src": "./img/Donald_0.webp",
+    "article": "330216",
+    "color": ["білий", "блакитний"],
+    "id": 6
+  },
+  {
+    "name": "ЧОЛОВІЧІ ФУТБОЛКИ EXPLOSIVE MMXV",
+    "price": "719  ₴",
+    "src": "./img/futbolka-s-granatoy.webp",
+    "article": "330217",
+    "color": ["чорний"],
+    "id": 7
+  },
+  {
+    "name": "ЧОЛОВІЧІ ФУТБОЛКИ OPIUM GANG",
+    "price": "699  ₴",
+    "src": "./img/belaya-futbolka-opium-bdsm-s-devushkoy.webp",
+    "article": "330218",
+    "color": ["білий"],
+    "id": 8
+  },
+  {
+    "name": "ЧОЛОВІЧІ ФУТБОЛКИ GENIUS MMXV",
+    "price": "589  ₴",
+    "src": "./img/Genius_0.webp",
+    "article": "330219",
+    "color": ["білий"],
+    "id": 9
+  },
+  {
+    "name": "ЧОЛОВІЧІ ФУТБОЛКИ СТИЛІ OVERSIZE SKULL MICKEY",
+    "price": "819  ₴",
+    "src": "./img/opium-69.webp",
+    "article": "330220",
+    "color": ["чорний"],
+    "id": 10
+  }
+]
