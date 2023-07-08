@@ -20,7 +20,7 @@ export default function Modal(props) {
         <div className="modal-header">
           <h3>{modalHeader}</h3>
           {closeButton ? (
-            <Button variant="contained" onClick={() => closeModal()}>
+            <Button variant="text" onClick={() => closeModal()}>
               &times;
             </Button>
           ) : null}
@@ -30,10 +30,10 @@ export default function Modal(props) {
         </div>
         {modalAction && (
           <div className="modal-footer">
-            <Button variant="contained" onClick={() => modalOk()}>
+            <Button variant="text" onClick={() => modalOk()}>
               {modalAction[0]}
             </Button>
-            <Button variant="contained" onClick={() => closeModal()}>
+            <Button variant="text" onClick={() => closeModal()}>
               {modalAction[1]}
             </Button>
           </div>

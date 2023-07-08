@@ -9,7 +9,9 @@ export default function Product(props) {
   return (
     <div className="product-item">
       {removeBtn ? (
-        <Button onClick={() => setRemoveBtnModal()}>
+        <Button
+          sx={{ alignSelf: "flex-end" }}
+          onClick={() => setRemoveBtnModal()}>
           <span aria-hidden="true">&times;</span>
         </Button>
       ) : (
