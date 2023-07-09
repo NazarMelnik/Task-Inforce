@@ -33,7 +33,7 @@ export default function Modal(props) {
             <Button variant="text" onClick={() => modalOk()}>
               {modalAction[0]}
             </Button>
-            <Button variant="text" onClick={() => closeModal()}>
+            <Button variant="contained" onClick={() => closeModal()}>
               {modalAction[1]}
             </Button>
           </div>
